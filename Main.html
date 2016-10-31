@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Book a Vacation!</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type = "text/css" href="css.css">
 </head>
 <body>
-
+<form method="post" class="signin">
+    <fieldset class="textbox">
+        <label class="username">
+            <span>Username or email</span>
+            <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+        </label>
+        <label class="password">
+            <span>Password</span>
+            <input id="password" name="password" value="" type="password" placeholder="Password">
+        </label>
+        <button class="submit button" type="button" id="signIn" ><a id="signInPage" href="Destinations.html">Sign in</a></button>
+        <p>
+           Don't have an account?<a class="create" href="createAccount.html">Create one</a>!
+        </p>
+    </fieldset>
+</form>
 </body>
 </html>

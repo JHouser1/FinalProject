@@ -7,12 +7,17 @@
     <link rel="stylesheet" type = "text/css" href="css.css">
 </head>
 <body>
-<div>
+<table><tr><td><div id="hotelHead">
     <h2>Hotels</h2>
-</div>
-<div>
+</div></td>
+<td>
+<div id="flightHead">
     <h2>Flights</h2>
-</div>
-<button type="button" id="subFlight" ><a id="confirmPage" href="ConfirmBooking.html">Proceed to Confirmation Page</a></button>
+</div></td></tr>
+</table>
+<table class="hotelFlightChoices">
+    <tr><td><input type="radio">Mariott</td><td class="hotelPicture">insert picture</td><td class="flights"><input type="radio">American Airlines</td></tr>
+</table>
+<p><button type="button" id="subFlight" ><a id="confirmPage" href="ConfirmBooking.html">Proceed to Confirmation Page</a></button> <button type="button"><a id="destinationPage" href="Destinations.html">Start Over</a></button></p>
 </body>
 </html>

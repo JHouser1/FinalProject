@@ -1,0 +1,19 @@
+#minPrice{
+    width:100px;
+}
+#maxPrice{
+    width:100px;
+}
+#flightHead{
+    margin: 60px 200px auto 500px;
+   }
+#hotelHead{
+    margin: 60px 200px auto 200px;
+}
+table.hotelFlightChoices{
+    border:1px solid;
+    margin: 60px;
+}
+.hotelFlightChoices td{
+    border:1px solid;
+}

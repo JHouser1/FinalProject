@@ -17,3 +17,6 @@ table.hotelFlightChoices{
 .hotelFlightChoices td{
     border:1px solid;
 }
+#divOutput{
+    color:red;
+}

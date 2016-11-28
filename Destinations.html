@@ -16,9 +16,10 @@
     <tr><td><input type="radio" id="london" value="london">London</td><td></td></tr>
     <tr><td><input type="radio" id="paris" value="paris">Paris</td><td></td></tr>
 </table>
-<p>Desired Price Range for Hotel:<input type="text" id="minPriceHotel" placeholder="Minimum Price"> to <input type="text" id="maxPriceHotel" placeholder="Maximum Price"></p>
-<p>Desired Price Range for Flight:<input type="text" id="minPriceFlight" placeholder="Minimum Price"> to <input type="text" id="maxPriceFlight" placeholder="Maximum Price"></p>
-
-<p><button type="button" id="subDest" ><a id="destPage" href="FlightandHotel.html">Choose your Hotel</a></button></p>
+<p>Maximum Price for Hotel:<input type="text" id="maxPriceHotel" placeholder="Maximum Price" > (Per Night)</p>
+<p>Maximum Price for Flight:<input type="text" id="maxPriceFlight" placeholder="Maximum Price"> (Round Trip for Two)</p>
+<div id="divOutput"></div>
+<button type="button" id="subDest" onclick="CheckPrices();">Submit Prices</button><br>
+<p><button type="button" id="subDestNav" ><a id="destPage" href="FlightandHotel.html" >Choose your Hotel</a></button></p>
 </body>
 </html>

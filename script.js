@@ -3,12 +3,12 @@
  */
 const max_hotel_price = 800;
 const max_flight_price= 1500;
-
+var maxPriceHotel = document.getElementById("maxPriceHotel").value;
 
 
 
 function CheckPrices(){
-    var maxPriceHotel = document.getElementById("maxPriceHotel").value;
+
     if (IsValid(maxPriceHotel)){
         maxPriceHotel = parseFloat(maxPriceHotel);
         if(maxPriceHotel>= max_hotel_price){
@@ -40,4 +40,17 @@ function IsValid(value){
         valid = false;
     }
     return valid;
+}
+function $(x){
+    return document.getElementById(x);
+}
+function DisplayHotel(){
+    if (document.getElementById("hongKong").checked){
+        document.getElementById('hotel2').style.display='none';
+        document.getElementById('hotel3').style.display='none';
+        document.getElementById("hotel4").style.display='none';
+        document.getElementById("hotel5").style.display='none';
+        document.getElementById("hotel6").style.display='none';
+        document.getElementById("hotel7").style.display='none';
+    }
 }

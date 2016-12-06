@@ -10,16 +10,29 @@
 <form method="post" class="signin">
     <fieldset class="textbox">
         <label class="username">
-            <span>Username or email</span>
+            <span>Username</span>
             <input id="username" name="username" value="" type="text" placeholder="Username">
         </label>
         <label class="password">
             <span>Password</span>
             <input id="password" name="password" value="" type="password" placeholder="Password">
         </label>
-        <button class="submit button" type="button" id="signIn" ><a id="signInPage" href="Destinations.html">Sign in</a></button>
-        <p>
-           Don't have an account?<a class="create" href="createAccount.html">Create one</a>!
+       <p> <button class="create account" id="createAccount" onclick="StoreName();"> Create Account </button>
+        </p>
+    </fieldset>
+</form>
+<p>or</p>
+<form method="post" class="signin">
+    <fieldset class="textbox">
+        <label class="username">
+            <span>Username</span>
+            <input id="name" name="username" value="" type="text" placeholder="Username">
+        </label>
+        <label class="password">
+            <span>Password</span>
+            <input id="pass" name="password" value="" type="password" placeholder="Password">
+        </label>
+        <p><button class="submit button" type="button" id="signIn" onclick="CheckName();">Sign in</button>&nbsp;&nbsp;<a href="Destinations.html">Next</a>
         </p>
     </fieldset>
 </form>

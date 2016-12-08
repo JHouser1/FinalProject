@@ -6,16 +6,16 @@
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type = "text/css" href="css.css">
 </head>
-<body onload="DisplayName();">
+<body onload="DisplayName(); StartOver();">
 <h3><div id="usersName"></div></h3>
 <h2> Choose a Destination</h2>
 <h4>All trips depart 1/2/2017 and return 1/14/2017</h4>
+
+
 <table>
-    <tr><td><input type="radio" id="hongKong" name="destination" value="hongKong">Hong Kong</td><td></td></tr>
-    <tr><td><input type="radio" id="singapore" name="destination" >Singapore</td><td></td></tr>
-    <tr><td><input type="radio" id="newYork" name="destination" >New York</td><td></td></tr>
-    <tr><td><input type="radio" id="london" name="destination" >London</td><td></td></tr>
-    <tr><td><input type="radio" id="paris" name="destination" >Paris</td><td></td></tr>
+    <tr><td><input type="radio" id="newYork" name="destination" value="newYork">New York</td><td></td></tr>
+    <tr><td><input type="radio" id="london" name="destination" value="london">London</td><td></td></tr>
+    <tr><td><input type="radio" id="paris" name="destination" value="paris">Paris</td><td></td></tr>
 </table>
 <p>Maximum Price for Hotel:<input type="text" id="maxPriceHotel" placeholder="Maximum Price" > (Per Night)</p>
 <p>Maximum Price for Flight:<input type="text" id="maxPriceFlight" placeholder="Maximum Price"> (Round Trip for Two)</p>

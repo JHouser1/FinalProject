@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="DisplayFlights();">
 <div id="flightHead">
     <h2>Flights</h2>
 </div>
-<table class="hotelFlightChoices">
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
-    <tr><td><input type="radio">Airline Name</td><td>$Price</td></tr>
+
+<table>
+    <tr id="flight1"><td><input  type="radio"  name="flights" value="flight1">American Airlines</td><td>$500</td></tr>
+    <tr id="flight2"><td><input  type="radio"  name="flights" value="flight2">United Airlines</td><td>$550</td></tr>
+    <tr id="flight3"><td><input  type="radio"  name="flights" value="flight3">Southwest Airlines</td><td>$600</td></tr>
+    <tr id="flight4"><td><input  type="radio"  name="flights" value="flight4">Frontier Airlines</td><td>$900</td></tr>
+    <tr id="flight5"><td><input  type="radio"  name="flights" value="flight5">Spirit Airlines</td><td>$950</td></tr>
+    <tr id="flight6"><td><input  type="radio"  name="flights" value="flight6">Delta</td><td>$1000</td></tr>
+    <tr id="flight7"><td><input  type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight8"><td><input  type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight9"><td><input  type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight10"><td><input  type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight11"><td><input  type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight12"><td><input  type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight13"><td><input type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight14"><td><input type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
+    <tr id="flight15"><td><input type="radio" name="flights">Airline Name</td><td>$Price</td></tr>
 
 </table>
-<p><button type="button" id="subFlight" ><a id="flightPage" href="ConfirmBooking.html">Proceed to Confirmation Page</a></button> <button type="button"><a id="destinationPage" href="Destinations.html">Start Over</a></button></p>
+<p><button type="button" id="subFlight" onclick="StoreFlight();"><a id="flightPage" href="ConfirmBooking.html">Proceed to Confirmation Page</a></button> <button type="button"><a id="destinationPage" href="Destinations.html">Start Over</a></button></p>
 </body>
 </html>

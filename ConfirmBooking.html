@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Confirm your Booking</title>
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-<p> You are booking a trip to:</p>
-<p><button type="button" id="subBooking" ><a id="receiptPage" href="Receipt.html">Book Now!</a></button><button type="button"><a id="destinationPage" href="Destinations.html">Start Over</a></button></p>
+<body onload="Confirmation(); TotalPrice();">
+<p> You are booking a trip to:<div id="destConfirm"></div> <br> via <div id="flightConfirm"></div> <br>and staying at the <br> <div id="hotelConfirm"></div>
+<p>Your total cost will be: <div id="totalCost"></div>
+<p><button type="button" id="subBooking" onclick="BookingPlaced();">Book Now!</button><button type="button"><a id="destinationPage" href="Destinations.html">Start Over</a></button><button><a id="mainPage" href="Main.html">Logout</a></button></p>
 </body>
 </html>
